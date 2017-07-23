@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "623f5cd2-a08a-4504-8412-12a4f19b3510",
+  "alias": "AlertWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "623f5cd2-a08a-4504-8412-12a4f19b3510",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Alert" },
+    "description": { "default": "Alert message on home page" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Alert"
+    }
+  }]
+}

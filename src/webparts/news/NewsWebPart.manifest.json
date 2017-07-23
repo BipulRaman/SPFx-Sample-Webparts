@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "7a94e7bd-7465-4170-8ae4-29e77815c26e",
+  "alias": "NewsWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "7a94e7bd-7465-4170-8ae4-29e77815c26e",
+    "group": { "default": "Under Development" },
+    "title": { "default": "News" },
+    "description": { "default": "Organisational News" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "News"
+    }
+  }]
+}

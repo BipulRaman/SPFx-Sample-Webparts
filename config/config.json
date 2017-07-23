@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/alert/AlertWebPart.js",
+      "manifest": "./src/webparts/alert/AlertWebPart.manifest.json",
+      "outputPath": "./dist/alert.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/events/EventsWebPart.js",
+      "manifest": "./src/webparts/events/EventsWebPart.manifest.json",
+      "outputPath": "./dist/events.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/news/NewsWebPart.js",
+      "manifest": "./src/webparts/news/NewsWebPart.manifest.json",
+      "outputPath": "./dist/news.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/carousel/CarouselWebPart.js",
+      "manifest": "./src/webparts/carousel/CarouselWebPart.manifest.json",
+      "outputPath": "./dist/carousel.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/trending/TrendingWebPart.js",
+      "manifest": "./src/webparts/trending/TrendingWebPart.manifest.json",
+      "outputPath": "./dist/trending.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "alertStrings": "webparts/alert/loc/{locale}.js",
+    "eventsStrings": "webparts/events/loc/{locale}.js",
+    "newsStrings": "webparts/news/loc/{locale}.js",
+    "carouselStrings": "webparts/carousel/loc/{locale}.js",
+    "trendingStrings": "webparts/trending/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "8035a0ba-0b01-4999-acfd-22c3b1795a02",
+  "alias": "EventsWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "8035a0ba-0b01-4999-acfd-22c3b1795a02",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Events" },
+    "description": { "default": "Upcoming Events" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Events"
+    }
+  }]
+}

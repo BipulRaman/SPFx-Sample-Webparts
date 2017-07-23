@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "INTRANET-WEBPARTS",
+    "id": "faf126fe-1902-4d36-9ca5-a17f4b2bb31d",
+    "version": "1.0.0.2"
+  },
+  "paths": {
+    "zippedPackage": "solution/webparts.sppkg"
+  }
+}
