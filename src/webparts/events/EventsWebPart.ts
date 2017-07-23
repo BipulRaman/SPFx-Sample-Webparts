@@ -10,7 +10,6 @@ import * as strings from 'eventsStrings';
 import { IEventsWebPartProps } from './IEventsWebPartProps';
 import { SPComponentLoader } from '@microsoft/sp-loader';
 import * as Config from '../../KeyValueConfig';
-
 export default class EventsWebPart extends BaseClientSideWebPart<IEventsWebPartProps> {
 
   public constructor() {

@@ -8,31 +8,31 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './Alert.module.scss';
 import * as strings from 'alertStrings';
 import { IAlertWebPartProps } from './IAlertWebPartProps';
-
+import { SPComponentLoader } from '@microsoft/sp-loader';
 import * as Config from '../../KeyValueConfig';
-
 import pnp from "sp-pnp-js";
 
-import { SPComponentLoader } from '@microsoft/sp-loader';
 export default class AlertWebPart extends BaseClientSideWebPart<IAlertWebPartProps> {
   
   public constructor() {
     super();
-    SPComponentLoader.loadCss("https://your-css-library-url");    
+    SPComponentLoader.loadCss(Config.bootstrapScoped.bootstrap);    
   }
 
   public render(): void {
-    pnp.sp.web.get().then(r => {    
-    console.log(r);
-    this.domElement.innerHTML = ` 
-    <div class="${styles.alert}"> 
-      <div class="bootstrap">
-        <div><h3>Welcome to ${r.Title}</h3><div>
-        <div class="alert alert-danger" style="margin-bottom: 0px;" role="alert">Warning! Office closed due to Tsunami warning. <a href="#" class="alert-link">Read More</a></div>
-      </div>
-    `;
-   });
+    pnp.sp.web.get().then(r =>{
+      console.log(r);
+      this.domElement.innerHTML = ` 
+      <div>${r.Title}</div>
+      <div>${r.Url}</div>
+      <div class="${styles.alert}"> 
+        <div class="bootstrap">
+          <div class="alert alert-danger" style="margin-bottom: 0px;" role="alert">Warning! Office closed due to Tsunami warning. <a href="#" class="alert-link">Read More</a></div>
+        </div>
+      `;
+    });
 
+    
     
   }
 
@@ -51,8 +51,8 @@ export default class AlertWebPart extends BaseClientSideWebPart<IAlertWebPartPro
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('Title', {
+                  label: 'WebPart Title'
                 })
               ]
             }
